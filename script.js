@@ -1,3 +1,8 @@
+// JavaScript for homepage interaction
+function startExploring() {
+    alert("Welcome to the Esoteric Chaos Blogsite! Start your journey into the unknown!");
+}
+
 // Wait for the DOM to fully load before adding event listeners
 document.addEventListener("DOMContentLoaded", function () {
     // Find the button element
@@ -9,8 +14,3 @@ document.addEventListener("DOMContentLoaded", function () {
         button.addEventListener("click", startExploring);
     }
 });
-
-// Function for handling the button click
-function startExploring() {
-    alert("Welcome to the Esoteric Chaos Blogsite! Start your journey into the unknown!");
-}
