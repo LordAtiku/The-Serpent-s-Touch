@@ -1,4 +1,4 @@
-/* Basic Styles */
+/* Body styles */
 body {
     font-family: 'Georgia', serif;
     background-color: #1e1e2f;
@@ -7,6 +7,7 @@ body {
     padding: 0;
 }
 
+/* Header styles */
 header {
     background: linear-gradient(90deg, #4b0082, #000);
     color: white;
@@ -14,6 +15,7 @@ header {
     padding: 2em 0;
 }
 
+/* Navigation Bar styles */
 nav {
     background-color: #333;
     display: flex;
@@ -21,87 +23,52 @@ nav {
     padding: 1em 0;
 }
 
-    nav a {
-        color: white;
-        text-decoration: none;
-        font-weight: bold;
-    }
-
-        nav a:hover {
-            color: #4b0082;
-        }
-
-.container {
-    padding: 2em;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2em;
-    justify-content: center;
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.content, .shop-section {
+nav a:hover {
+    color: #4b0082;
+}
+
+/* Home Content Section styles */
+#home-content {
+    padding: 2em;
     background: #2a2a40;
     border-radius: 10px;
-    padding: 1.5em;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-    flex: 1 1 45%;
-    max-width: 600px;
+    text-align: center;
 }
 
-.shop-section {
-    position: relative;
+#home-content h2 {
+    font-size: 2.5em;
+    color: #4b0082;
 }
 
-.sold-out {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: red;
+#home-content p {
+    font-size: 1.2em;
+    margin: 1em 0;
+}
+
+#home-content button {
+    background-color: #4b0082;
     color: white;
-    padding: 0.5em;
-    font-size: 0.9em;
+    padding: 0.5em 1em;
+    border: none;
+    cursor: pointer;
     border-radius: 5px;
-    display: none;
 }
 
+#home-content button:hover {
+    background-color: #371456;
+}
+
+/* Footer styles */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 1em;
-}
-
-button {
-    background-color: #4b0082;
-    color: white;
-    border: none;
-    padding: 0.5em 1em;
-    margin: 1em 0;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-    button:hover {
-        background-color: #371456;
-    }
-
-textarea, input {
-    width: 100%;
-    margin: 1em 0;
-    padding: 0.5em;
-    border-radius: 5px;
-    border: 1px solid #444;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .content, .shop-section {
-        max-width: 100%;
-        flex: 1 1 100%;
-    }
 }
